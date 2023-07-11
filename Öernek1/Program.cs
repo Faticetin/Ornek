@@ -10,19 +10,33 @@ namespace Öernek1
     {
         static void Main(string[] args)
         {
-            string text;
-            Console.WriteLine("Metini Giriniz");
-            text= Console.ReadLine();
-
-            foreach (var item in text)
-            {
-                Console.WriteLine(item);
-            }
-
-            Console.ReadKey();
-
-
-
+            int num1, num2;
+            Console.WriteLine("1. Sayıyı Giriniz");
+            num1 =Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("2. Sayıyı Giriniz");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            
+            karsilastirma(num1,num2);
+            Console.ReadLine();
         }
+
+
+        static int karsilastirma(int num1,int num2)
+        {
+            if(num1 > num2)
+            {
+                Console.WriteLine("1 numarar daha büyük");
+                return num1;
+            }
+            else
+            {
+                Console.WriteLine("2 numarar daha büyük");
+                return num2;
+            }
+        }
+
+
+
+
     }
 }

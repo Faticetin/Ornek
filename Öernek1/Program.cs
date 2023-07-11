@@ -8,52 +8,30 @@ namespace Öernek1
 {
     internal class Program
     {
-        enum mounths
-        {
-            Ocak = 1,
-            Şubat,
-            Mart,
-            Nistan,
-            Mayıs,
-            Haziran,
-            Temmuz,
-            Ağustos,
-            Eylül,
-            Ekim,
-            Kasım,
-            Aralık
-        }
+
 
 
         static void Main(string[] args)
         {
             int num1;
-            Console.Write("Sayı giriniz = ");
-            num1 =Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Dizi Elaman Sayısını Giriniz");
+            num1 = Convert.ToInt32(Console.ReadLine());
 
-            mounths mounth = mounth_bring(num1);
+            int[] series = new int[num1];
+            for (int i = 0; i < num1; i++)
+            {
+                Console.WriteLine("Elamanı giriniz");
+                series[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int j = 0; j < series.Length; j++)
+            {
+                Console.WriteLine(series[j]);
+            }
 
-            print(mounth);
             Console.ReadLine();
         }
 
-        static mounths mounth_bring(int num1)
-        {
-            if (Enum.IsDefined(typeof(mounths), num1))
-            {
-                return (mounths)num1;
-            }
-            else
-            {
-                throw new ArgumentException("Geçersiz ay numarası");
-            }
-        }
 
-        static void print(mounths mounth)
-        {
-            
-            Console.Write("Denk gelen ay = " + mounth);
-        }
 
     }
 }

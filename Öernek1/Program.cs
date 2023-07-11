@@ -23,9 +23,10 @@ namespace Öernek1
                 Console.WriteLine("Elamanı giriniz");
                 series[i] = Convert.ToInt32(Console.ReadLine());
             }
+            Console.WriteLine("************************")
             for (int j = 0; j < series.Length; j++)
             {
-                Console.WriteLine(series[j]);
+                Console.Write(series[j]);
             }
 
             Console.ReadLine();

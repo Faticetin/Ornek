@@ -8,35 +8,52 @@ namespace Öernek1
 {
     internal class Program
     {
+        enum mounths
+        {
+            Ocak = 1,
+            Şubat,
+            Mart,
+            Nistan,
+            Mayıs,
+            Haziran,
+            Temmuz,
+            Ağustos,
+            Eylül,
+            Ekim,
+            Kasım,
+            Aralık
+        }
+
+
         static void Main(string[] args)
         {
-            int num1, num2;
-            Console.WriteLine("1. Sayıyı Giriniz");
+            int num1;
+            Console.Write("Sayı giriniz = ");
             num1 =Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("2. Sayıyı Giriniz");
-            num2 = Convert.ToInt32(Console.ReadLine());
-            
-            karsilastirma(num1,num2);
+
+            mounths mounth = mounth_bring(num1);
+
+            print(mounth);
             Console.ReadLine();
         }
 
-
-        static int karsilastirma(int num1,int num2)
+        static mounths mounth_bring(int num1)
         {
-            if(num1 > num2)
+            if (Enum.IsDefined(typeof(mounths), num1))
             {
-                Console.WriteLine("1 numarar daha büyük");
-                return num1;
+                return (mounths)num1;
             }
             else
             {
-                Console.WriteLine("2 numarar daha büyük");
-                return num2;
+                throw new ArgumentException("Geçersiz ay numarası");
             }
         }
 
-
-
+        static void print(mounths mounth)
+        {
+            
+            Console.Write("Denk gelen ay = " + mounth);
+        }
 
     }
 }

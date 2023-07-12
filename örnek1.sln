@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diziler 2", "Diziler 2\Dizi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dizi_3", "Dizi_3\Dizi_3.csproj", "{E4ECFB99-5C6A-44F3-9BEA-D354C9518282}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dizi 4", "dizi 4\dizi 4.csproj", "{C4E64FBE-5F37-47CA-8010-60030E8392ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E4ECFB99-5C6A-44F3-9BEA-D354C9518282}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4ECFB99-5C6A-44F3-9BEA-D354C9518282}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4ECFB99-5C6A-44F3-9BEA-D354C9518282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4E64FBE-5F37-47CA-8010-60030E8392ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E64FBE-5F37-47CA-8010-60030E8392ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4E64FBE-5F37-47CA-8010-60030E8392ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4E64FBE-5F37-47CA-8010-60030E8392ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
